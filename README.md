@@ -59,4 +59,12 @@ To check remote url
 git remote -v
 ```
 
-To setup CI/CD pipeline we use netlify
+To setup CI/CD pipeline i use netlify.
+
+
+BUILD DOCKER IMAGE
+```
+docker build -t <image_name>:<tag_name>.
+```
+> Note: Image name for docker must be lowercase
+
