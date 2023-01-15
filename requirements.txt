@@ -1,2 +1,6 @@
-Flask
+numpy
+flask
+pandas
+sklearn
 gunicorn
+-e .
