@@ -3,9 +3,13 @@ import sys
 
 class HousingException(Exception):
     
-    def __init__(self, error_messaage:Exception,  error_details:sys):
+    def __init__(self, error_messaage:Exception,error_details:sys):
         super().__init__(error_messaage)
-        self.error_message=error_messaage
+        self.error_message=HousingException.get_detailed_error_message(error_messaage=error_messaage,
+                                                                        error_details=error_details
+                                                                        )
+
+                                                                        
 
     @staticmethod
     def get_detailed_error_message(error_messaage:Exception,  error_details:sys)->str:

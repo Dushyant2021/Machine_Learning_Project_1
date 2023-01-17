@@ -3,10 +3,9 @@
 ### Software and account Requirements :
 
 1.  [Github Account](https://github.com)
-2.  [Heroku Account](https://dashboard.heroku.com/login)
-3.  [VS Code IDE](https://code.visualstudio.com/download)
-4.  [Git CLI](https://git-scm.com/downloads) 
-5.  [Git Documentation](https://git-scm.com/docs/git)
+2.  [VS Code IDE](https://code.visualstudio.com/download)
+3.  [Git CLI](https://git-scm.com/downloads) 
+4.  [Git Documentation](https://git-scm.com/docs/git)
 
 Creating conda environment
 ```
@@ -67,4 +66,25 @@ BUILD DOCKER IMAGE
 docker build -t <image_name>:<tag_name>.
 ```
 > Note: Image name for docker must be lowercase
+
+To list docker image
+```
+docker images
+```
+
+Run docker image
+```
+docker run -p 5000:5000 -e PORT=5000 f3f1a561b47d
+```
+
+To check running containers
+```
+docker ps
+```
+
+To stop docker container
+```
+docker stop <container_id>
+```
+
 
