@@ -3,4 +3,5 @@ flask
 pandas
 sklearn
 gunicorn
+PyYAML
 -e .
